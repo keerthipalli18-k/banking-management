@@ -79,12 +79,13 @@ Linked List
 Functions (modular programming)
 Menu-driven logic
 🖥️ Demo Output
-<img width="500" height="291" alt="Screenshot 2026-03-27 150846" src="https://github.com/user-attachments/assets/1865610c-312c-47e8-8ba2-bf4d1a2a59ac" />
-<img width="450" height="660" alt="Screenshot 2026-03-27 150835" src="https://github.com/user-attachments/assets/cde1b5d2-dd4b-45a6-88b5-bfddd874c5b6" />
-<img width="419" height="537" alt="Screenshot 2026-03-27 150819" src="https://github.com/user-attachments/assets/3ec34867-fc37-4da3-81a4-7fe3a7a0cca3" />
-<img width="522" height="463" alt="Screenshot 2026-03-27 150731" src="https://github.com/user-attachments/assets/9eb87b1e-8616-4f1b-8539-d88cb160ed0c" />
-<img width="561" height="738" alt="Screenshot 2026-03-27 150710" src="https://github.com/user-attachments/assets/cd02d8f7-3711-41db-bfdc-002ae17a54ca" />
-<img width="466" height="806" alt="Screenshot 2026-03-27 150653" src="https://github.com/user-attachments/assets/f83375a9-99c3-4ec7-882b-b2cbf56f2f81" />
+<img width="466" height="806" alt="Screenshot 2026-03-27 150653" src="https://github.com/user-attachments/assets/a28edda3-0cf7-49e8-a709-e520f62dad97" />
+<img width="561" height="738" alt="Screenshot 2026-03-27 150710" src="https://github.com/user-attachments/assets/c20d40a2-b9ee-44f6-a4e7-94be15cea1a4" />
+<img width="522" height="463" alt="Screenshot 2026-03-27 150731" src="https://github.com/user-attachments/assets/8bc53002-d1e7-4e94-b5a5-73b046681fc5" />
+<img width="419" height="537" alt="Screenshot 2026-03-27 150819" src="https://github.com/user-attachments/assets/17a72bb9-a8ec-4d8a-86ac-c547084ea70c" />
+<img width="450" height="660" alt="Screenshot 2026-03-27 150835" src="https://github.com/user-attachments/assets/bfa645e8-08a0-49c8-b076-f5682e73cf8a" />
+<img width="500" height="291" alt="Screenshot 2026-03-27 150846" src="https://github.com/user-attachments/assets/95217d3a-c068-4eda-a372-20ba1622b619" />
+
 
 ✅ Conclusion
 
