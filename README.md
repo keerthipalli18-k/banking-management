@@ -3,6 +3,10 @@
 
 Banking Management System using CRUD Operations with Dynamic Memory Allocation in C
 
+Team Members
+Student 1:P.Keerthana
+Student 2:D.Sai harshith Reddy
+
 📌 Problem Statement
 
 In traditional systems, managing bank records manually is inefficient, error-prone, and time-consuming. There is a need for a system that can efficiently store, retrieve, update, and delete customer account information dynamically without fixed memory limits.
