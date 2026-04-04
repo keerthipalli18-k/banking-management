@@ -83,13 +83,13 @@ Else → not found
 
 To run the Banking Management System program, a C compiler such as GCC is required. Follow the steps below:
 
-Save the program file as main.c
-Open terminal / command prompt and navigate to the folder where the file is stored
-Compile the program using the command:
+1.Save the program file as main.c
+2.Open terminal / command prompt and navigate to the folder where the file is stored
+3.Compile the program using the command:
 gcc main.c -o banking
-Run the compiled program using:
+4.Run the compiled program using:
 ./banking
-
+(For Windows use: banking.exe)
 
 
 💻 Implementation
