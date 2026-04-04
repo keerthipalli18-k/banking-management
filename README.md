@@ -73,6 +73,16 @@ Input account number
 Traverse list
 If found → display details
 Else → not found
+⚙️ Compilation and Execution Instructions
+
+To run the Banking Management System program, a C compiler such as GCC is required. Follow the steps below:
+
+Save the program file as main.c
+Open terminal / command prompt and navigate to the folder where the file is stored
+Compile the program using the command:
+gcc main.c -o banking
+Run the compiled program using:
+./banking
 💻 Implementation
 Language: C
 Concepts Used:
