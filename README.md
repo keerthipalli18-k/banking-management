@@ -34,6 +34,7 @@ Why Linked List?
 Dynamic size (no limit like arrays)
 Efficient insertion and deletion
 Memory allocated at runtime
+
 ⚙️ System Design
 🔹 Components:
 Node (struct Account)
@@ -48,6 +49,7 @@ Search Node
 User selects operation from menu
 Corresponding function is called
 Linked list is modified dynamically
+
 🧮 Algorithm
 🔹 1. Add Node (Create)
 Allocate memory using malloc()
@@ -73,6 +75,8 @@ Input account number
 Traverse list
 If found → display details
 Else → not found
+
+
 ⚙️ Compilation and Execution Instructions
 
 To run the Banking Management System program, a C compiler such as GCC is required. Follow the steps below:
@@ -83,6 +87,9 @@ Compile the program using the command:
 gcc main.c -o banking
 Run the compiled program using:
 ./banking
+
+
+
 💻 Implementation
 Language: C
 Concepts Used:
@@ -92,6 +99,8 @@ malloc() and free()
 Linked List
 Functions (modular programming)
 Menu-driven logic
+
+
 🖥️ Demo Output
 
 
