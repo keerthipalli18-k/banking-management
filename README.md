@@ -7,7 +7,7 @@ Team Members
 
 Student 1: P.Keerthana
 
-Student 2:D.Sai harshith Reddy
+Student 2:D Sai Harshith Reddy
 
 📌 Problem Statement
 
