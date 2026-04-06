@@ -6,11 +6,15 @@
 Banking System using Linked List and File Handling in C
 
 
+
+
 👨‍💻 Team Members
 
 Student 1:P.Keerthana
 
 Student 2:D.Sai harshith Reddy
+
+
 
 
 
@@ -28,6 +32,7 @@ The system should also store data permanently using file handling so that record
 
 
 
+
  🧠 Data Structure Used
 
 * Singly Linked List
@@ -41,6 +46,7 @@ The system should also store data permanently using file handling so that record
   * File Handling (Binary File)
 
   * Used to store account data permanently in `accounts.dat`
+
 
 
 
@@ -83,6 +89,8 @@ The system should also store data permanently using file handling so that record
 
 
 
+
+
 💻 Compilation Instructions
 Step 1: Compile the program
 
@@ -99,6 +107,8 @@ gcc banking.c -o banking
 *(On Windows use `banking.exe` instead of `./banking`)*
 
 
+
+
  <img width="497" height="351" alt="Screenshot 2026-04-06 130525" src="https://github.com/user-attachments/assets/559e9066-6077-41ec-96ab-48a3dbb6fe24" />
 <img width="499" height="349" alt="Screenshot 2026-04-06 130534" src="https://github.com/user-attachments/assets/79bf082a-5398-4f31-85d1-191556bf57ee" />
 <img width="486" height="298" alt="Screenshot 2026-04-06 130543" src="https://github.com/user-attachments/assets/9a6ae129-d070-4267-89dd-e943bbfed3d4" />
@@ -109,7 +119,10 @@ gcc banking.c -o banking
 
 
 
+
+
 🎥 Demo Video Link
+
 
 
 
@@ -122,12 +135,15 @@ gcc banking.c -o banking
 
 
 
+
 🚀 Features
 
 * Linked List implementation
 * File persistence
 * CRUD operations
 * Simple menu-driven interface
+
+
 
 
 
