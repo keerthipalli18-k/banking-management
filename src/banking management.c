@@ -2,7 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Structure (Node)
+// Structure for FILE (no pointer)
+struct FileAccount {
+    int accNo;
+    char name[50];
+    float balance;
+};
+
+// Linked List Node
 struct Account {
     int accNo;
     char name[50];
@@ -12,7 +19,52 @@ struct Account {
 
 struct Account *head = NULL;
 
-// CREATE (Add Node)
+// SAVE TO FILE
+void saveToFile() {
+    FILE *fp = fopen("accounts.dat", "wb");
+    struct Account *temp = head;
+    struct FileAccount fa;
+
+    if (fp == NULL) {
+        printf("File Error!\n");
+        return;
+    }
+
+    while (temp != NULL) {
+        fa.accNo = temp->accNo;
+        strcpy(fa.name, temp->name);
+        fa.balance = temp->balance;
+
+        fwrite(&fa, sizeof(fa), 1, fp);
+        temp = temp->next;
+    }
+
+    fclose(fp);
+}
+
+// LOAD FROM FILE
+void loadFromFile() {
+    FILE *fp = fopen("accounts.dat", "rb");
+    if (fp == NULL) return;
+
+    struct FileAccount fa;
+    struct Account *newNode;
+
+    while (fread(&fa, sizeof(fa), 1, fp)) {
+        newNode = (struct Account*)malloc(sizeof(struct Account));
+
+        newNode->accNo = fa.accNo;
+        strcpy(newNode->name, fa.name);
+        newNode->balance = fa.balance;
+
+        newNode->next = head;
+        head = newNode;
+    }
+
+    fclose(fp);
+}
+
+// ADD
 void addNode() {
     struct Account *newNode = (struct Account*)malloc(sizeof(struct Account));
 
@@ -28,10 +80,12 @@ void addNode() {
     newNode->next = head;
     head = newNode;
 
+    saveToFile();
+
     printf("✅ Record Added Successfully!\n");
 }
 
-// READ (Display)
+// DISPLAY
 void display() {
     struct Account *temp = head;
 
@@ -41,6 +95,7 @@ void display() {
     }
 
     printf("\n--- Account Records ---\n");
+
     while (temp != NULL) {
         printf("\nAccount No: %d", temp->accNo);
         printf("\nName: %s", temp->name);
@@ -87,6 +142,8 @@ void updateNode() {
             printf("Enter New Balance: ");
             scanf("%f", &temp->balance);
 
+            saveToFile();
+
             printf("✅ Record Updated Successfully!\n");
             return;
         }
@@ -112,6 +169,8 @@ void deleteNode() {
                 prev->next = temp->next;
 
             free(temp);
+            saveToFile();
+
             printf("✅ Record Deleted Successfully!\n");
             return;
         }
@@ -122,20 +181,32 @@ void deleteNode() {
     printf("❌ Record Not Found!\n");
 }
 
-// MAIN FUNCTION (Menu Driven)
+// FREE MEMORY
+void freeList() {
+    struct Account *temp;
+    while (head != NULL) {
+        temp = head;
+        head = head->next;
+        free(temp);
+    }
+}
+
+// MAIN
 int main() {
     int choice;
 
+    loadFromFile(); // load data when program starts
+
     while (1) {
-        printf("\n====== MENU ======\n");
-        printf("1. Add Node\n");
-        printf("2. Delete Node\n");
-        printf("3. Update Node\n");
-        printf("4. Search\n");
-        printf("5. Display\n");
+        printf("\n====== BANKING SYSTEM ======\n");
+        printf("1. Add Account\n");
+        printf("2. Delete Account\n");
+        printf("3. Update Account\n");
+        printf("4. Search Account\n");
+        printf("5. Display All\n");
         printf("6. Exit\n");
 
-        printf("Enter your choice: ");
+        printf("Enter choice: ");
         scanf("%d", &choice);
 
         switch (choice) {
@@ -145,12 +216,17 @@ int main() {
             case 4: search(); break;
             case 5: display(); break;
             case 6:
-                printf("Exiting...\n");
+                freeList();
+                printf("Thank You!\n");
                 exit(0);
             default:
-                printf("❌ Invalid choice!\n");
+                printf("❌ Invalid Choice!\n");
         }
     }
 
     return 0;
 }
+  
+
+
+ 
