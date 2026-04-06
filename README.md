@@ -1,127 +1,132 @@
 # banking-management
-🏦 Project Title
+🏦 Banking System using Linked List in C
 
-Banking Management System using CRUD Operations with Dynamic Memory Allocation in C
+📌 Project Title
 
-Team Members
-
-Student 1: P.Keerthana
-
-Student 2:D Sai Harshith Reddy
-
-📌 Problem Statement
-
-In traditional systems, managing bank records manually is inefficient, error-prone, and time-consuming. There is a need for a system that can efficiently store, retrieve, update, and delete customer account information dynamically without fixed memory limits.
-
-This project aims to develop a menu-driven Banking Management System using linked lists and dynamic memory allocation to perform CRUD operations efficiently.
-
-🌍 Real-world Application
-Bank customer account management
-ATM backend record handling
-Small finance/business record systems
-Student or employee database systems
-
-This concept is widely used in database systems and real-time applications where data size is not fixed.
-
-🧱 Data Structure Used
-👉 Singly Linked List
-
-Each node represents a bank account containing:
-
-Account Number
-Name
-Balance
-Pointer to next node
-Why Linked List?
-Dynamic size (no limit like arrays)
-Efficient insertion and deletion
-Memory allocated at runtime
-
-⚙️ System Design
-🔹 Components:
-Node (struct Account)
-Head Pointer
-Functions:
-Add Node (Create)
-Display (Read)
-Update Node
-Delete Node
-Search Node
-🔹 Flow:
-User selects operation from menu
-Corresponding function is called
-Linked list is modified dynamically
-
-🧮 Algorithm
-🔹 1. Add Node (Create)
-Allocate memory using malloc()
-Input account details
-Insert node at beginning
-Update head pointer
-🔹 2. Display (Read)
-Start from head
-Traverse till NULL
-Print each node
-🔹 3. Update Node
-Input account number
-Traverse list
-If found → update details
-Else → show not found
-🔹 4. Delete Node
-Input account number
-Traverse list with prev pointer
-Adjust links
-Free memory using free()
-🔹 5. Search Node
-Input account number
-Traverse list
-If found → display details
-Else → not found
+Banking System using Linked List and File Handling in C
 
 
-⚙️ Compilation and Execution Instructions
+👨‍💻 Team Members
+Student 1:P.Keerthana
+Student 2:D.Sai harshith Reddy
 
-To run the Banking Management System program, a C compiler such as GCC is required. Follow the steps below:
 
-1.Save the program file as main.c
-2.Open terminal / command prompt and navigate to the folder where the file is stored
-3.Compile the program using the command:
-gcc main.c -o banking
-4.Run the compiled program using:
+
+❓ Problem Statement
+
+To design and implement a simple banking system that allows users to:
+
+* Create new accounts
+* Delete accounts
+* Update account details
+* Search for accounts
+* Display all records
+
+The system should also store data permanently using file handling so that records are not lost after program execution.
+
+
+
+ 🧠 Data Structure Used
+
+* Singly Linked List
+
+  * Each node represents a bank account
+  * Stores:
+
+    * Account Number
+    * Name
+    * Balance
+  * File Handling (Binary File)
+
+  * Used to store account data permanently in `accounts.dat`
+
+
+
+⚙️ Algorithm Explanation
+
+1. Add Account
+
+* Create a new node
+* Take input (Account No, Name, Balance)
+* Insert at beginning of linked list
+* Save all records to file
+
+2. Delete Account
+
+* Search for account by account number
+* Remove node from linked list
+* Update file
+
+3. Update Account
+
+* Search account
+* Modify name and balance
+* Save updated list to file
+
+ 4. Search Account
+
+* Traverse linked list
+* Compare account numbers
+* Display details if found
+
+ 5. Display All Accounts
+
+* Traverse entire linked list
+* Print all records
+
+6. File Handling
+
+* **Save:** Write all nodes into binary file
+* **Load:** Read file and recreate linked list at program start
+
+
+
+💻 Compilation Instructions
+Step 1: Compile the program
+
+```bash
+gcc banking.c -o banking
+```
+
+### Step 2: Run the program
+
+```bash
 ./banking
-(For Windows use: banking.exe)
+```
+
+*(On Windows use `banking.exe` instead of `./banking`)*
 
 
-💻 Implementation
-Language: C
-Concepts Used:
-struct
-Pointers
-malloc() and free()
-Linked List
-Functions (modular programming)
-Menu-driven logic
+ <img width="497" height="351" alt="Screenshot 2026-04-06 130525" src="https://github.com/user-attachments/assets/559e9066-6077-41ec-96ab-48a3dbb6fe24" />
+<img width="499" height="349" alt="Screenshot 2026-04-06 130534" src="https://github.com/user-attachments/assets/79bf082a-5398-4f31-85d1-191556bf57ee" />
+<img width="486" height="298" alt="Screenshot 2026-04-06 130543" src="https://github.com/user-attachments/assets/9a6ae129-d070-4267-89dd-e943bbfed3d4" />
+<img width="513" height="350" alt="Screenshot 2026-04-06 130552" src="https://github.com/user-attachments/assets/7d5010c4-37c0-4394-ac4d-6fd93bb7cc1c" />
+<img width="558" height="397" alt="Screenshot 2026-04-06 130604" src="https://github.com/user-attachments/assets/3bab8707-9647-4a4c-bcc9-ad95ad77761b" />
+<img width="527" height="495" alt="Screenshot 2026-04-06 130622" src="https://github.com/user-attachments/assets/1bcfc19f-24d6-45e5-a9b5-8e5011dffb5a" />
+<img width="514" height="253" alt="Screenshot 2026-04-06 130632" src="https://github.com/user-attachments/assets/86988e33-d63c-4951-8488-137c9e41e542" />
 
 
-🖥️ Demo Output
+
+🎥 Demo Video Link
 
 
-<img width="466" height="806" alt="Screenshot 2026-03-27 150653" src="https://github.com/user-attachments/assets/a28edda3-0cf7-49e8-a709-e520f62dad97" />
-<img width="561" height="738" alt="Screenshot 2026-03-27 150710" src="https://github.com/user-attachments/assets/c20d40a2-b9ee-44f6-a4e7-94be15cea1a4" />
-<img width="522" height="463" alt="Screenshot 2026-03-27 150731" src="https://github.com/user-attachments/assets/8bc53002-d1e7-4e94-b5a5-73b046681fc5" />
-<img width="419" height="537" alt="Screenshot 2026-03-27 150819" src="https://github.com/user-attachments/assets/17a72bb9-a8ec-4d8a-86ac-c547084ea70c" />
-<img width="450" height="660" alt="Screenshot 2026-03-27 150835" src="https://github.com/user-attachments/assets/bfa645e8-08a0-49c8-b076-f5682e73cf8a" />
-<img width="500" height="291" alt="Screenshot 2026-03-27 150846" src="https://github.com/user-attachments/assets/95217d3a-c068-4eda-a372-20ba1622b619" />
+
+ 📂 File Used
+
+* `accounts.dat` → Stores account data permanently
+
+
+
+🚀 Features
+
+* Linked List implementation
+* File persistence
+* CRUD operations
+* Simple menu-driven interface
+
 
 
 ✅ Conclusion
 
-This project successfully demonstrates the use of CRUD operations with dynamic memory allocation using a linked list in C. It eliminates the limitations of static memory and provides efficient data handling.
+This project demonstrates how data structures like linked lists combined with file handling can be used to build a simple and efficient banking system in C.
 
-The system is:
-
-Flexible
-Memory efficient
-Easy to modify and extend
-
-It forms the foundation for advanced systems like databases and real-world banking software.
