@@ -7,7 +7,9 @@ Banking System using Linked List and File Handling in C
 
 
 👨‍💻 Team Members
+
 Student 1:P.Keerthana
+
 Student 2:D.Sai harshith Reddy
 
 
@@ -111,9 +113,12 @@ gcc banking.c -o banking
 
 
 
+
+
  📂 File Used
 
 * `accounts.dat` → Stores account data permanently
+
 
 
 
@@ -123,6 +128,7 @@ gcc banking.c -o banking
 * File persistence
 * CRUD operations
 * Simple menu-driven interface
+
 
 
 
